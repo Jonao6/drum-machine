@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@500&display=swap');
+.drum {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid rgba(0, 0 , 0, 0.5);
+    background-color: black;
+    min-height: 180px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
+  }
+  .pad {
+    display: inline-block;
+    width: 30vw;
+    margin: 1rem;
+  }
+  .my-display {
+    display: inline-block;
+    width: 20vw;
+    margin: 1rem;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .my-display {
+      margin-left: 7vw;
+    }
+  }
+  
+  @media only screen and (max-width: 921px) {
+    .drum {
+      margin-left: 1%;
+      margin-right: 2%;
+      margin-top: 0;
+    }
+    .my-display {
+      margin-top: -2vh;
+      width: 70vw;
+      margin-left: 0;
+    }
+  }

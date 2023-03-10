@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Lato:ital,wght@0,400;1,300&family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@500&display=swap');
+.controls {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  grid-gap: 15px;
+}
+
+.power,
+.set {
+  font-size: 1.5rem;
+  font-family: 'Genos', sans-serif;
+}
+.display {
+
+  background-color: #1b8fd6;
+  width: 60%;
+  text-align: center;
+  color: black;
+  font-family: 'DotGothic16', sans-serif;
+}
+
+.item {
+  padding: 12px;
+  color: white;
+}
+
+.slider {
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.toggle:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .toggle {
+  background-color: rgb(27, 143, 214)
+}
+
+input:focus + .toggle {
+  box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .toggle:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
